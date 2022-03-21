@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&family=Roboto+Mono:wght@500&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Next Fitness Contacts</title>
+</head>
+<body class="contacts-body">
+    <header class="flex-nav height-header ">
+        <div class="img-logo col-2 ">
+            <img src="images/logo.png" alt="" class="contact-logo">
+        </div> 
+        <nav class="col-sm-8 nav d-flex justify-content-end  align-items-center offset-1 navbar-contact">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li class="nav-item"><a href="exercises.html" class="nav-link">Exercises</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+     <div class="contact-container">
+        <div class="contact-wrapper">
+            <article class="contact-form">
+                <div class="contact-center">
+                    <h2>Send a Message</h2>
+                    <div class="contact-flex">
+                        <div class="firstname">
+                            <label for="firstname">Firstname</label>
+                            <input type="text" class="marginleft">
+                        </div>
+                        <div class="lastname">
+                            <label for="Lastname">Lastname</label>
+                            <input type="text" class="marginleft">
+                        </div>
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input type="email">
+                        </div>
+                        <div class="mobile">
+                            <label for="number">Mobile</label>
+                            <input type="number">
+                        </div>
+                    </div>
+                </div>
+                <div class="textarea">
+                    <h2>Message</h2>
+                    <textarea name="Message" id="" cols="70" rows="10"></textarea>
+                </div>
+                <input class="contact-btn" onclick="showMessage()" type="submit" value="Send">
+            </article>
+            <aside>
+                <div class="contact-flex-info">
+                    <div class="contact-info">
+                        <div class="flex-info">
+                            <i class="fas fa-address-book icon-marginright"></i>
+                            <span class="font-info">San Mateo Rizal</span>
+                        </div>
+                        <div class="flex-info">
+                            <i class="fas fa-envelope icon-marginright" ></i>
+                            <span class="font-info">dextersigue@gmail.com</span>
+                        </div>
+                        <div class="flex-info">
+                            <i class="fas fa-phone icon-marginright"></i>
+                            <span class="font-info">09062271326</span>
+                        </div>
+                    </div>
+                    <div class="contact-icon">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-googlemaps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.295420277578!2d121.13089101415325!3d14.695878478676164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397bb37dbcb291f%3A0x4109e36b7de47142!2sSan%20Mateo%20Rizal!5e0!3m2!1sen!2sph!4v1647079005167!5m2!1sen!2sph" width="420" height="230" style="border:3px solid #90B2B8; border-radius: 2%;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </aside>
+        </div>
+    </div>
+    </main>
+    <footer class="footer-home footer__container contact-footer">
+        <div class="footer__links contact-position">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items contact-item">
+                    <h2>About</h2>
+                    <a href="#">How it works</a>
+                    <a href="#">Testimonial</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Terms of Services</a>
+                </div>
+                <div class="footer__link--items contact-item">
+                    <h2>Contact</h2>
+                    <a href="#">Contact</a>
+                    <a href="#">Support</a>
+                    <a href="#">Destination</a>
+                    <a href="#">Sponsorship</a>
+                </div>
+                <div class="footer__link--items contact-item">
+                    <h2>Videos</h2>
+                    <a href="#">Submit Videos</a>
+                    <a href="#">Ambassadors</a>
+                    <a href="#">Agency</a>
+                    <a href="#">Influencer</a>
+                </div>
+                <div class="footer__link--items contact-item">
+                    <h2>Media</h2>
+                    <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                    <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+                    <a href="#"><i class="fab fa-youtube"></i>Youtube</a>
+                    <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ctop">
+                 <div>
+                     <p class="my-2 fitness-red">&copy;Next Fitness</p>
+                 </div>
+                <div class="text-center my-2">
+                    <p class="website__rights contactmtop">2022 All rights reserved</p>
+                </div>
+            </div>
+    </footer> 
+    <script src="script.js"></script>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+</body>
+</html>
